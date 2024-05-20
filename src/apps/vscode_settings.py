@@ -89,7 +89,7 @@ class LinuxUserActions:
             os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")
         )
         flatpak_apps = Path.home() / ".var/app"
-        return pick_path(
+        return pick_path(     
             [
                 xdg_config_home / "Cursor/User/settings.json",
                 xdg_config_home / "Code/User/settings.json",
