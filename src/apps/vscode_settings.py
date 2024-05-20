@@ -91,6 +91,7 @@ class LinuxUserActions:
         flatpak_apps = Path.home() / ".var/app"
         return pick_path(
             [
+                xdg_config_home / "Cursor/User/settings.json",
                 xdg_config_home / "Code/User/settings.json",
                 xdg_config_home / "VSCodium/User/settings.json",
                 xdg_config_home / "Code - OSS/User/settings.json",
